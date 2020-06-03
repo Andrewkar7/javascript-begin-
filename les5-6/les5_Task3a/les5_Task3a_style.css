@@ -1,0 +1,36 @@
+.wrap {
+    width: 500px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #dfd9d9;
+    position: fixed;
+    top: 5%;
+    left: calc(50% - 250px);
+}
+
+.hidden {
+    display: none;
+}
+
+span {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fde5a1;
+    font-size: 34px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+span:hover {
+    background: #dfd9d9;
+    color: red;
+}
+
+span:active {
+    background: white;
+}
+
