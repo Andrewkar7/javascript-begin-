@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+
+        function addNumbers(a, b) {
+            return a + b
+        }
+        function subtrNumbers(a, b) {
+            return a - b
+        }
+        function multNumbers(a, b) {
+            return a * b
+        }
+        function devNumbers(a, b) {
+            return a / b
+        }
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    console.log (addNumbers(arg1, arg2));
+                    break;
+                case "-":
+                    console.log (subtrNumbers(arg1, arg2));
+                    break;
+                case "*":
+                    console.log (multNumbers(arg1, arg2));
+                    break;
+                case "/":
+                    console.log (devNumbers(arg1, arg2));
+                    break;
+            }
+        }
+        mathOperation(10, 5, "-")
+    </script>
+</body>
+</html>

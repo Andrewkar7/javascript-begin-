@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="les5_Task3a_style.css">
+</head>
+<body>
+    <button>Модальное окно</button>
+
+    <div class="wrap hidden">
+        <span>&times;</span>
+        Очень часто модальные окна и диалоги делаются при помощи плагинов jQuery. Например, SimpleModal или jqModal. <br>
+        К сожалению, все они, в варианте по умолчанию, работают неправильно. Что же такое «правильно»? <br>
+        Модальное окно по определению блокирует работу пользователя с родительским окном до тех пор, пока пользователь его не закроет. <br> 
+        То есть:Пользователю нельзя позволять прокручивать страницу под ним. <br>
+        При этом, если содержимого в модальном окне очень много, нужно позволить прокручивать содержимое.
+    </div>
+
+    <script>
+        "use strict";
+        
+        let wrap = document.querySelector('.wrap');
+        let span = document.querySelector('span');
+        let button = document.querySelector('button');
+
+        button.addEventListener('click', function() {
+            wrap.classList.remove('hidden');
+        })
+
+        span.addEventListener('click', function() {
+            wrap.classList.add('hidden');
+        })
+    </script>
+</body>
+</html>
